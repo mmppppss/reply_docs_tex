@@ -1,0 +1,50 @@
+\documentclass[man, 10pt]{apa7}
+\usepackage[spanish]{babel}
+\usepackage{graphfig}
+\usepackage{minted} % para código
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{capt-of}
+
+
+\usepackage[style=apa, backend=biber, sortcites=true, doi=true, isbn=false, url=true]{biblatex}
+\addbibresource{bibliografia.bib}
+\setcounter{secnumdepth}{3}
+
+% título
+\title{\scshape {Software como Servicio para la automatización de mensajería y optimización de la comunicación institucional mediante agentes de autorespuesta}}
+\shorttitle{}
+\author{Marthel Pedro Pozo Solíz \\ Melissa Shanner Nuñez Ardaya}
+\date{\today}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{secciones/0-caratula.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+
+% \input{./secciones/00_resumen.tex}%
+\section{Perfil}
+\input{secciones/1-introduccion.tex}
+\input{secciones/2-problema.tex}
+%\input{secciones/99-antecedentes.tex}
+\input{secciones/3-justificacion.tex}
+\input{secciones/4-objetivo_general.tex}
+\input{secciones/4.1-objetivos_especificos.tex}
+%\input{secciones/99-alcance.tex}
+\input{secciones/5-localizacion.tex}
+\input{secciones/6-marco_teorico.tex}
+\input{secciones/7-metodologia-investigacion.tex}
+\input{secciones/8-cronograma.tex}
+\input{secciones/9-presupuesto.tex}
+\printbibliography
+
+\end{document}
