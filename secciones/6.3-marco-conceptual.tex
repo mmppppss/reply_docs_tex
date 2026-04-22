@@ -1,31 +1,65 @@
 \subsubsection{Marco Conceptual}
 
 \begin{itemize}
-    \item \textbf{SaaS (Software as a Service).} Modelo de distribución de software en el que las aplicaciones se alojan en servidores de nube y se ofrecen a través de internet bajo suscripción, sin instalación local (\cite{mellgrance2011}).
+    \item \textbf{SaaS (Software as a Service).} Modelo de distribución de software en el que las aplicaciones se alojan en servidores de nube y se ofrecen a través de internet bajo suscripción, sin instalación local \parencite{mellgrance2011}.
 
-    \item \textbf{Bot conversacional / Chatbot.} Programa informático diseñado para simular conversaciones con personas mediante lenguaje natural o flujos de diálogo estructurados, procesando mensajes y generando respuestas automáticas (\cite{adamopoulou2020}).
+	\item \textbf{Multitenencia (Multitenancy).} Arquitectura donde una misma instancia de aplicación atiende múltiples clientes de forma aislada y segura, compartiendo eficientemente recursos de infraestructura \parencite{armbrust2010}.
 
-    \item \textbf{Agente de autorespuesta.} Tipo de chatbot orientado a atención institucional o comercial, que responde consultas frecuentes de forma autónoma y escala a operador humano cuando es necesario.
+    \item \textbf{Plataforma web.} Aplicación software accesible mediante un navegador web, que no requiere instalación local y se ejecuta en servidores remotos, permitiendo acceso centralizado y desde cualquier dispositivo con conexión a internet \parencite{nielsen1994}.
 
-    \item \textbf{API (Application Programming Interface).} Conjunto de definiciones y protocolos que habilita la comunicación e integración entre sistemas de software para intercambiar datos y funcionalidades (\cite{fielding2000}).
+    \item \textbf{Mensajería instantánea.} Servicio de comunicación digital que permite el intercambio de mensajes en tiempo real entre usuarios, característico por su inmediatez y ubicuidad en dispositivos móviles y de escritorio \parencite{statista_messaging_2025}.
+
+    \item \textbf{WhatsApp Business.} Versión empresarial de WhatsApp diseñada para que negocios y organizaciones gestionen su comunicación con clientes, ofreciendo herramientas específicas para atención comercial y automatización básica \parencite{meta2024business}.
+
+    \item \textbf{WhatsApp Cloud API.} Interfaz de programación proporcionada por Meta que permite integrar sistemas externos con WhatsApp para enviar y recibir mensajes de forma automatizada \parencite{linocruz2023}.
 
     \item \textbf{Baileys (WhatsApp Web API).} Biblioteca de JavaScript/TypeScript que permite integrar WhatsApp Web de forma programática para enviar, recibir y gestionar mensajes automatizados.
 
-    \item \textbf{Telegram Bot API.} API pública y gratuita de Telegram para crear bots que interactúan con usuarios, procesan mensajes, envían multimedia y ejecutan comandos en la plataforma (\cite{telegram2024}).
+    \item \textbf{Telegram Bot API.} API pública y gratuita de Telegram para crear bots que interactúan con usuarios, procesan mensajes, envían multimedia y ejecutan comandos en la plataforma \parencite{telegram2024}.
 
-    \item \textbf{PLN (Procesamiento de Lenguaje Natural).} Rama de la inteligencia artificial que estudia la interacción entre computadoras y lenguaje humano para comprender, interpretar y generar texto significativo (\cite{manningschutze1999}).
+    \item \textbf{Bot conversacional / Chatbot.} Programa informático diseñado para simular conversaciones con personas mediante lenguaje natural o flujos de diálogo estructurados, procesando mensajes y generando respuestas automáticas \parencite{adamopoulou2020}.
 
-    \item \textbf{Omnicanalidad.} Estrategia que garantiza una experiencia de usuario coherente y continua, independientemente del canal utilizado, unificando historiales y criterios de atención (\cite{rigby2011}).
+    \item \textbf{Agente de autorespuesta.} Tipo de chatbot orientado a atención institucional o comercial, que responde consultas frecuentes de forma autónoma y escala a operador humano cuando es necesario.
 
-    \item \textbf{Multitenencia (Multitenancy).} Arquitectura donde una misma instancia de aplicación atiende múltiples clientes de forma aislada y segura, compartiendo eficientemente recursos de infraestructura (\cite{armbrust2010}).
+    \item \textbf{Flujos de respuesta.} Secuencias predefinidas de mensajes y condiciones que guían la interacción entre el usuario y el sistema automatizado, estructurando el diálogo según la consulta o necesidad del usuario.
 
-    \item \textbf{Trazabilidad conversacional.} Capacidad del sistema para registrar y recuperar el historial completo de interacciones, facilitando auditorías, análisis de comportamiento y continuidad de atención.
+    \item \textbf{PLN (Procesamiento de Lenguaje Natural).} Rama de la inteligencia artificial que estudia la interacción entre computadoras y lenguaje humano para comprender, interpretar y generar texto significativo \parencite{manningschutze1999}.
 
-    \item \textbf{Escalabilidad.} Propiedad del sistema para incrementar capacidad de procesamiento o usuarios atendidos conforme aumenta la carga, sin degradar rendimiento ni rediseñar la arquitectura.
+    \item \textbf{Handoff (Transferencia de canal).} Proceso mediante el cual una conversación automatizada se transfiere a un operador humano, preservando contexto e historial para asegurar continuidad \parencite{folstadskjuve2019}.
 
-    \item \textbf{Handoff (Transferencia de canal).} Proceso mediante el cual una conversación automatizada se transfiere a un operador humano, preservando contexto e historial para asegurar continuidad (\cite{folstadskjuve2019}).
+    \item \textbf{API (Application Programming Interface).} Conjunto de definiciones y protocolos que habilita la comunicación e integración entre sistemas de software para intercambiar datos y funcionalidades \parencite{fielding2000}.
+
+    \item \textbf{Integración multicanal.} Capacidad del sistema para gestionar comunicaciones provenientes de múltiples plataformas de mensajería de forma unificada, consolidando conversaciones en una sola interfaz de gestión.
+
+    \item \textbf{Omnicanalidad.} Estrategia que garantiza una experiencia de usuario coherente y continua, independientemente del canal utilizado, unificando historiales y criterios de atención \parencite{rigby2011}.
+
+    \item \textbf{Interoperabilidad.} Capacidad de un sistema para comunicarse y compartir datos con otros sistemas o plataformas diferentes, facilitando el intercambio de información y la integración de servicios.
+
+    \item \textbf{Arquitectura orientada a servicios (SOA).} Enfoque de diseño de software que organiza la aplicación en servicios independientes y reutilizables, comunicados mediante interfaces estándar.
+
+	\item \textbf{KPIs (Key Performance Indicators).} Indicadores clave de rendimiento que permiten medir la efectividad del sistema en términos de tiempo de respuesta, resolución automática, satisfacción del usuario y disponibilidad del servicio.
+
+    \item \textbf{Tiempo de respuesta.} Intervalo transcurrido entre la solicitud del usuario y la recepción de la respuesta del sistema, métrica fundamental para evaluar la eficiencia del servicio automatizado \parencite{iso25010}.
+
+    \item \textbf{Resolución automática.} Porcentaje de consultas que son respondidas completamente por el sistema sin necesidad de intervención humana, indicando el nivel de autonomía del sistema.
 
     \item \textbf{CSAT (Customer Satisfaction Score).} Indicador de satisfacción obtenido mediante encuestas breves posteriores a la interacción, que mide valoración del usuario en escala numérica definida.
 
-    \item \textbf{Tríada CIA (Confidencialidad, Integridad, Disponibilidad).} Marco de seguridad de la información que establece acceso autorizado, exactitud de datos y disponibilidad oportuna de la información (\cite{iso27001_2022}).
+    \item \textbf{Trazabilidad conversacional.} Capacidad del sistema para registrar y recuperar el historial completo de interacciones, facilitando auditorías, análisis de comportamiento y continuidad de atención.
+
+	\item \textbf{Tríada CIA (Confidencialidad, Integridad, Disponibilidad).} Marco de seguridad de la información que establece acceso autorizado, exactitud de datos y disponibilidad oportuna de la información \parencite{iso27001_2022}.
+
+    \item \textbf{Cifrado.} Técnica de seguridad que transforma la información legible en un formato codificado, garantizando que solo partes autorizadas puedan acceso a los datos originales.
+
+    \item \textbf{Controles de acceso.} Mecanismos que regulan qué usuarios o sistemas pueden acceder a recursos específicos, aplicando permisos basados en roles y políticas de seguridad.
+
+	\item \textbf{Experiencia de usuario (UX).} Percepción global que tiene un usuario al interactuar con el sistema, determinada por la facilidad de uso, claridad de la información y satisfacción general con la atención recibida \parencite{google2021ux}.
+
+    \item \textbf{Transformación digital.} Proceso de adopción de tecnologías digitales en todas las áreas de una organización, cambiando fundamentalmente sus operaciones y modelos de negocio \parencite{ocal2017}.
+
+    \item \textbf{Escalabilidad.} Propiedad del sistema para incrementar capacidad de procesamiento o usuarios atendidos conforme aumenta la carga, sin degradar rendimiento ni rediseñar la arquitectura \parencite{aws2024scalability}.
+
+    \item \textbf{Monitoreo.} Proceso continuo de supervisión del funcionamiento del sistema, permitiendo detectar problemas y evaluar el rendimiento del servicio.
+
+    \item \textbf{Autenticación.} Verificación de la identidad de un usuario o sistema antes de permitirle acceso a recursos o información específica.
 \end{itemize}
